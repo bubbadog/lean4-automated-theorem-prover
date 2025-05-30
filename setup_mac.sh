@@ -25,6 +25,6 @@ python3 -m pip install --upgrade pip
 python3 -m pip install openai numpy scipy scikit-learn nltk tiktoken
 
 # Step 6: Navigate to your project directory (replace with actual path)
-cd /Users/jkarbowski/Documents/Lean/berkeley_mooc
+cd /...
 
 echo "Setup complete! Now run 'lake lean Lean4CodeGenerator.lean' to verify."

@@ -1,0 +1,5 @@
+Find the minimum of three integers.
+
+Write a function that takes three integers and returns the smallest one. The function should correctly handle negative numbers and should return one of the input values (not a computed value).
+
+The specification requires that the result is less than or equal to all three inputs and equals one of the inputs.

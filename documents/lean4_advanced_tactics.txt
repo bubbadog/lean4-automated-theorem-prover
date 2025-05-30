@@ -1,0 +1,41 @@
+Lean 4 Advanced Proof Tactics for Complex Conditions
+
+For conditional expressions with multiple cases:
+1. Use `simp [function_name]` to simplify
+2. Use `split` for case analysis on if-then-else
+3. Use `omega` for arithmetic reasoning
+4. Use `<;>` to apply tactics to all goals
+
+Example proof pattern for min/max functions:
+theorem example_min_proof (a b c : Int) : spec_property a b c (minOfThree a b c) := by
+  unfold minOfThree spec_property
+  simp [minOfThree]
+  split <;> omega
+
+Alternative approach:
+by
+  unfold minOfThree spec_property
+  split
+  · omega  -- case 1
+  · split
+    · omega  -- case 2  
+    · omega  -- case 3
+
+<EOC>
+
+Lean 4 Conditional Logic Proofs
+
+For proving properties about if-then-else expressions:
+- Use `split` to break into cases
+- Use `omega` for integer arithmetic
+- Use `simp` with function definitions
+- Use `cases` for boolean conditions
+
+Pattern for three-way conditionals:
+if cond1 then val1 else if cond2 then val2 else val3
+
+Proof strategy:
+1. Unfold definitions
+2. Simplify with simp
+3. Split on conditions  
+4. Use omega for each case

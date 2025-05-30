@@ -1,0 +1,13 @@
+
+Lean 4 Basic Tactics:
+- `rfl`: reflexivity, proves `a = a`
+- `simp`: simplification using simp lemmas
+- `norm_num`: normalize numerical expressions
+- `ring`: prove ring equations
+- `omega`: arithmetic over natural numbers and integers
+- `sorry`: placeholder (should not be used in final proofs)
+
+Example:
+theorem add_comm (a b : Nat) : a + b = b + a := by
+  ring
+                

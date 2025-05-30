@@ -1,0 +1,41 @@
+# Environment variables and API keys
+.env
+*.env
+.env.local
+.env.production
+
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.so
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Lean build files
+.lake/
+lake-manifest.json
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+temp/
+tmp/
+
+# API keys or secrets (just in case)
+*api_key*
+*secret*
+*token*

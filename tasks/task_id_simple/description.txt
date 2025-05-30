@@ -1,0 +1,3 @@
+Add two integers.
+
+Write a function that takes two integers a and b and returns their sum a + b.

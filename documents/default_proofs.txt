@@ -1,0 +1,15 @@
+
+Lean 4 Proof Tactics:
+- `intro`: introduce hypotheses
+- `apply`: apply a theorem
+- `exact`: provide exact proof term
+- `rw`: rewrite using equation
+- `split`: case analysis
+- `contradiction`: prove false from contradictory hypotheses
+- `unfold`: unfold definitions
+
+Example:
+theorem modus_ponens (P Q : Prop) (hpq : P → Q) (hp : P) : Q := by
+  apply hpq
+  exact hp
+                

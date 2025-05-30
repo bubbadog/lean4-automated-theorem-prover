@@ -1,0 +1,15 @@
+
+Lean 4 Function Definitions:
+- Use `def` for definitions
+- Specify types explicitly
+- Use pattern matching with `match`
+
+Example:
+def factorial (n : Nat) : Nat :=
+  match n with
+  | 0 => 1
+  | n + 1 => (n + 1) * factorial n
+
+def max (a b : Int) : Int :=
+  if a >= b then a else b
+                
